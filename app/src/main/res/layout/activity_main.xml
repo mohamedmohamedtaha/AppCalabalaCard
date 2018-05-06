@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icons"
+    tools:context="com.example.manasatpc.rabbitcard.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <ImageView
+            android:id="@+id/ImageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/card1"
+            android:scaleType="fitStart"
+            />
+    <LinearLayout
+        android:id="@+id/linearPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImageLogo"
+        android:gravity="left|center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+
+        >
+        <ImageView
+        android:id="@+id/ImagePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone"
+        />
+
+        <TextView
+            android:id="@+id/TVTitlePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number Phone :"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary_text"
+            />
+        <TextView
+            android:id="@+id/TVShowPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+966535020871"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearEmail"
+        android:layout_below="@id/linearPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+        <ImageView
+            android:id="@+id/ImageEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email"
+            />
+        <TextView
+            android:textColor="@color/secondary_text"
+            android:id="@+id/TVTitleEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/TVShowEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mohamed.taha169@yahoo.com"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearAddress"
+        android:layout_below="@id/linearEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+        <ImageView
+            android:id="@+id/ImageAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"
+            />
+        <TextView
+            android:id="@+id/TVTitleAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:textColor="@color/secondary_text"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/TVShowAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 20 ST-Mena Elahmady- Eshbelya"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearTime"
+        android:layout_below="@id/linearAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+        <ImageView
+            android:id="@+id/ImageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_time"
+            />
+        <TextView
+            android:id="@+id/TVTitleHourWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="work hours :"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary_text"
+
+            />
+        <TextView
+            android:id="@+id/TVShowHourWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 AM to 5 PM"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearDescription"
+        android:layout_below="@id/linearTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+       >
+        <TextView
+            android:id="@+id/TVTitleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description :"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/secondary_text"
+            />
+        <TextView
+            android:id="@+id/TVShowDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calabala is a private rabbit breeding company with rabbits from the purest chains of the world. It relies on the latest technologies in education. It has a group of trained veterinarians and workers, and has outlets throughout the Republic."
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="16dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>
